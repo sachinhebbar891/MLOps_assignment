@@ -1,6 +1,7 @@
 import joblib
 import pandas as pd
 
+
 def test_prediction():
     scaler = joblib.load('../model/standard_scaler.joblib')
     model = joblib.load('../model/lr_model.joblib')
@@ -12,6 +13,7 @@ def test_prediction():
     predictions = model.predict(X_test_scaled)
     
     assert len(predictions) == len(X_test)
+
 
 if __name__ == "__main__":
     test_prediction()
