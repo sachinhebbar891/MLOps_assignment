@@ -8,7 +8,7 @@ def predict(new_data):
     scaler = joblib.load('../model/standard_scaler.joblib')
     model = joblib.load('../model/lr_model.joblib')
 
-    X_test = new_data.drop(['Outcome'], axis = 1)
+    X_test = new_data.drop(['Outcome'],axis=1)
     y_test = new_data['Outcome'].copy()
     X_test_scaled = scaler.transform(X_test)
     predictions = model.predict(X_test_scaled)
