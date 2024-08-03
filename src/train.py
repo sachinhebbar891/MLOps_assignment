@@ -3,6 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 import joblib
 
+
 # Example training script
 def train_model():
     # Load data
@@ -21,6 +22,7 @@ def train_model():
     # Save scaler and model
     joblib.dump(scaler, '../model/standard_scaler.joblib')
     joblib.dump(model, '../model/lr_model.joblib')
+
 
 if __name__ == "__main__":
     train_model()
