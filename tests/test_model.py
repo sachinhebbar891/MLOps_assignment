@@ -3,8 +3,8 @@ import pandas as pd
 
 
 def test_prediction():
-    scaler = joblib.load('../model/standard_scaler.joblib')
-    model = joblib.load('../model/lr_model.joblib')
+    scaler = joblib.load('model/standard_scaler.joblib')
+    model = joblib.load('model/lr_model.joblib')
 
     new_data = pd.read_csv('../data/test.csv')
     X_test = new_data.drop(['Outcome'], axis=1)
