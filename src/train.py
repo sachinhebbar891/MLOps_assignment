@@ -7,7 +7,7 @@ import joblib
 # Example training script
 def train_model():
     # Load data
-    data = pd.read_csv('../data/train.csv')
+    data = pd.read_csv('data/train.csv')
     X = data.drop('Outcome', axis=1)
     y = data['Outcome'].copy()
 
@@ -20,8 +20,8 @@ def train_model():
     model.fit(X_train_scaled, y)
 
     # Save scaler and model
-    joblib.dump(scaler, '../model/standard_scaler.joblib')
-    joblib.dump(model, '../model/lr_model.joblib')
+    joblib.dump(scaler, 'model/standard_scaler.joblib')
+    joblib.dump(model, 'model/lr_model.joblib')
 
 
 if __name__ == "__main__":
