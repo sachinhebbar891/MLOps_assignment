@@ -2,6 +2,7 @@ import joblib
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
+
 # Example prediction script
 def predict(new_data):
     scaler = joblib.load('../model/standard_scaler.joblib')
@@ -13,6 +14,7 @@ def predict(new_data):
     predictions = model.predict(X_test_scaled)
     accuracy = accuracy_score(y_test, predictions)
     return predictions, accuracy
+
 
 if __name__ == "__main__":
     # Example usage
