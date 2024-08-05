@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/91918/Documents/BITS_MTech_Docs/Semester%203/MLOPS/Assignment-1/MLOps_assignment/mlruns/964362473900033239/c4b43f76e67a4b28a70d649e3dcff638/artifacts
+end_time: 1722775348210
+entry_point_name: ''
+experiment_id: '964362473900033239'
+lifecycle_stage: active
+run_id: c4b43f76e67a4b28a70d649e3dcff638
+run_name: Run_with_C_10.0
+run_uuid: c4b43f76e67a4b28a70d649e3dcff638
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722775346474
+status: 3
+tags: []
+user_id: '91918'
