@@ -7,10 +7,11 @@ import mlflow
 import mlflow.sklearn
 import os
 
+
 def train_model(run_name, C_value):
     # Set up MLflow experiment
     mlflow.set_experiment("Logistic_Regression_Experiment")
-    
+
     # Start MLflow run
     with mlflow.start_run(run_name=run_name):
         # Load data
@@ -49,6 +50,7 @@ def train_model(run_name, C_value):
         # Clean up local files
         os.remove(scaler_path)
         os.remove(model_path)
+
 
 # Run experiments with different parameters
 if __name__ == "__main__":
